@@ -20,7 +20,7 @@ with tab1:
 Indonesia sebagai negara berkembang yang memiliki letak strategis menjadi salah satu alasan mengapa para investor ingin menanamkan modal untuk berinvestasi.
 Selain itu, adanya Sumber Daya Manusia yang melimpah dianggap sebagai sebuah nilai tambah dalam menjalankan proyek investasinya.
 Pada tahun 2021, tercatat jumlah penduduk Indonesia telah mencapai <strong>273.8 juta jiwa</strong>
-(*<em><strong>sumber:</strong> World Bank, United States Census Bureau*</em>).
+(<em><strong>sumber:</strong> World Bank, United States Census Bureau</em>).
 
 <br>Apa itu penanaman modal? berdasarkan <strong>Pasal 1 angka 1 UU 25/2007</strong>, penanaman modal adalah segala bentuk kegiatan menanam modal,
 baik oleh penanam modal dalam negeri maupun penanam modal asing untuk melakukan usaha di wilayah negara Republik Indonesia.
@@ -283,7 +283,7 @@ with tab2:
     filtered_df = dataframes[variabel_selected]
 
     # Membuat grafik garis interaktif dengan Altair
-    grafik = alt.Chart(filtered_df, width=200, height=400).mark_line(point={"size": 100}).encode(
+    grafik = alt.Chart(filtered_df, width=400, height=600).mark_line(point={"size": 100}).encode(
         x='tahun:O',
         y=alt.Y('value:Q', title=variabel_selected),
         color='variable:N',
