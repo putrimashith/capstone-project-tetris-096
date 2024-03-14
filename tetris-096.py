@@ -283,7 +283,7 @@ with tab2:
     filtered_df = dataframes[variabel_selected]
 
     # Membuat grafik garis interaktif dengan Altair
-    grafik = alt.Chart(filtered_df, width=400, height=600).mark_line(point={"size": 100}).encode(
+    grafik = alt.Chart(filtered_df, width=200, height=400).mark_line(point={"size": 100}).encode(
         x='tahun:O',
         y=alt.Y('value:Q', title=variabel_selected),
         color='variable:N',
